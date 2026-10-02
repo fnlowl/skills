@@ -1,6 +1,6 @@
 ---
 name: fnlowl-capture
-description: Build, edit, and diagnose FnlOwl lead-capture widgets through MCP. Use for lead magnets, quizzes, surveys, popups, announcement bars, calculators, captured leads, and funnel analytics. Do not use for email campaigns, sequences, or installation guidance.
+description: Build, edit, and diagnose FnlOwl lead-capture widgets through MCP. Use for lead magnets, quizzes, surveys, popups, announcement bars, calculators, captured leads, and funnel analytics. Do not use for email campaigns, sequences, or installation guidance. Trigger on phrases like "create a quiz", "build a lead magnet widget", "add an announcement bar", "why is my widget not converting", "list my leads", or "show funnel analytics for this site".
 metadata:
   api: 4bff472
   openapi_paths: 90
