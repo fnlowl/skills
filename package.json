@@ -1,13 +1,57 @@
 {
-  "name": "@fnlowl/skills",
+  "name": "fnlowl-skills",
   "version": "0.1.0",
-  "private": true,
+  "description": "Agent skills for fnlowl: build lead-capture widgets, quizzes and popups, draft follow-up email sequences, install the embed on WordPress, Shopify and Webflow, and connect to the fnlowl MCP server. Works with Claude Code, Cursor, Codex and other agents.",
+  "keywords": [
+    "fnlowl",
+    "agent-skills",
+    "skills",
+    "mcp",
+    "claude-code",
+    "cursor",
+    "codex",
+    "lead-capture",
+    "lead-generation",
+    "email-marketing",
+    "popup",
+    "quiz",
+    "wordpress",
+    "shopify",
+    "webflow"
+  ],
+  "homepage": "https://fnlowl.com/docs/agents/skills/",
+  "bugs": {
+    "url": "https://github.com/fnlowl/skills/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fnlowl/skills.git"
+  },
   "license": "MIT",
-  "homepage": "https://fnlowl.com",
-  "repository": "github:fnlowl/skills",
-  "keywords": ["agent-skills", "mcp", "lead-capture", "fnlowl"],
+  "author": {
+    "name": "fnlowl",
+    "email": "mcpsupport@fnlowl.com",
+    "url": "https://fnlowl.com"
+  },
   "type": "module",
-  "description": "Agent skills for operating fnlowl — lead-capture widgets, the leads they produce, and the mail that follows.",
+  "files": [
+    "skills",
+    ".claude-plugin",
+    ".codex-plugin",
+    ".cursor-plugin",
+    ".agents",
+    ".mcp.json",
+    ".well-known",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "check": "node scripts/check-skills.mjs"
   }
