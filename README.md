@@ -27,6 +27,41 @@ npx skills add fnlowl/skills --global --agent claude-code --skill fnlowl-mcp
 Name your agent with `--agent` (for example `claude-code`, `codex` or `cursor`). Without it, a
 non-interactive run (`--yes`) installs into every agent the installer supports.
 
+## Install as a Claude Code plugin
+
+The repo is also a plugin marketplace, so Claude Code can install it directly:
+
+```text
+/plugin marketplace add fnlowl/skills
+/plugin install fnlowl@fnlowl-plugins
+```
+
+## How to invoke skills
+
+| Platform | Typical invocation |
+| --- | --- |
+| **Claude Code** | `/fnlowl-capture`, `/fnlowl-follow-up-automation`, `/fnlowl-installation`, `/fnlowl-mcp` |
+| **Cursor** | the same names after typing `/` in Agent chat |
+| **Codex** | describe the task, or `$fnlowl-capture` and the other skill names |
+
+## Verify install
+
+Try a task that should trigger one of the skills:
+
+- "Create a quiz widget for my pricing page."
+- "Why is this widget not converting?"
+- "Draft a three-email nurture sequence for people who finish the quiz."
+- "Add the fnlowl widget to my WordPress site."
+- "Connect Claude to fnlowl and list the tools it can use."
+
+## What's included
+
+- four skills that load when relevant
+- reference files and recipes for the capture and follow-up skills
+- `.mcp.json`, which points an agent at the hosted MCP server (OAuth sign-in on first use)
+
+It does not ship slash commands or an MCP server of its own; the server runs at `https://api.fnlowl.com/v1/mcp`.
+
 ## Use it
 
 The MCP server is at `https://api.fnlowl.com/v1/mcp` (streamable HTTP, OAuth). `.mcp.json` in
@@ -59,8 +94,8 @@ optional integration is configured. See
 node scripts/check-skills.mjs
 ```
 
-Markdown and JSON, no dependencies — Node 18 or later. `CLAUDE.md` has the rules; the short version
-is **describe only what is built**, and a limitation goes in
+Markdown and JSON, no dependencies — Node 18 or later. The one rule is
+**describe only what is built**, and a limitation goes in
 [references/known-gaps.md](skills/fnlowl-capture/references/known-gaps.md)
 rather than being left out.
 
@@ -75,8 +110,8 @@ MIT — see [LICENSE](LICENSE).
 
 ```text
 LICENSE
-CLAUDE.md
 .agents/plugins/marketplace.json
+.claude-plugin/marketplace.json
 .claude-plugin/plugin.json
 .codex-plugin/plugin.json
 .cursor-plugin/plugin.json
