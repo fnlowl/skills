@@ -1,0 +1,4 @@
+interface:
+  display_name: "FnlOwl Follow-up Automation"
+  short_description: "Draft and review follow-up email automation"
+  default_prompt: "Use $fnlowl-follow-up-automation to draft a follow-up sequence for leads from this FnlOwl widget."
