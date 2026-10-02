@@ -1,0 +1,4 @@
+interface:
+  display_name: "FnlOwl Installation"
+  short_description: "Install FnlOwl embeds on supported websites"
+  default_prompt: "Use $fnlowl-installation to add a FnlOwl widget to this site without exposing private credentials."
