@@ -1,6 +1,6 @@
 ---
 name: fnlowl-mcp
-description: Connect an AI agent to FnlOwl's remote MCP server or inspect its available tool surface. Use for FnlOwl API keys, MCP endpoint configuration, project scoping, tool availability, or MCP troubleshooting. Do not use for widget authoring or marketing strategy itself.
+description: Connect an AI agent to FnlOwl's remote MCP server or inspect its available tool surface. Use for FnlOwl API keys, MCP endpoint configuration, project scoping, tool availability, or MCP troubleshooting. Do not use for widget authoring or marketing strategy itself. Trigger on phrases like "connect Claude to fnlowl", "fnlowl MCP URL", "fnlowl API key", "which fnlowl tools are available", or "scope fnlowl to one project".
 metadata:
   api: 4bff472
   openapi_paths: 90
