@@ -27,6 +27,16 @@ npx skills add fnlowl/skills --global --agent claude-code --skill fnlowl-mcp
 Name your agent with `--agent` (for example `claude-code`, `codex` or `cursor`). Without it, a
 non-interactive run (`--yes`) installs into every agent the installer supports.
 
+### Pin a release
+
+Releases are tagged on GitHub. For a stable install, pin a tag instead of the default branch:
+
+```bash
+npx skills add fnlowl/skills#v0.1.0 --global --agent claude-code
+```
+
+The skills are versioned together as one bundle. A release that renames or removes a skill says so in its notes.
+
 ## Install as a Claude Code plugin
 
 The repo is also a plugin marketplace, so Claude Code can install it directly:
