@@ -26,21 +26,17 @@ npx skills add fnlowl/skills --global --skill fnlowl-mcp
 
 ## Use it
 
-You need a fnlowl API key from **Settings → API**. It starts `fnlk_` and is
-shown once.
+The MCP server is at `https://api.fnlowl.com/v1/mcp` (streamable HTTP, OAuth). `.mcp.json` in
+this package points there. Your client opens fnlowl's consent screen the first time: sign in and
+approve the scopes and website. Tokens are `fnla_`, revocable under **Settings → API →
+Connected apps**; a connector limited to one website is already project-bound, so `x-fnlowl-project` is
+ignored.
 
-```bash
-export FNLOWL_API_KEY=fnlk_...
-```
+Claude.ai and ChatGPT work the same way: add the URL as a custom connector (OAuth, leave client id
+and secret blank).
 
-The MCP server is at `https://api.fnlowl.com/v1/mcp` — streamable HTTP, bearer
-auth. `.mcp.json` in this package points there and reads the key from the
-environment; `FNLOWL_MCP_URL` overrides the host for a local API.
-
-Claude.ai and ChatGPT need no key: add the same URL as a custom connector (OAuth, leave
-client id and secret blank), sign in, and approve the scopes and website on fnlowl's consent
-screen. Tokens are `fnla_`, revocable under **Settings → API → Connected apps**; a connector
-limited to one website is already project-bound, so the header is ignored.
+For scripts and the CLI you can use an API key from **Settings → API** instead. It starts `fnlk_`,
+is shown once, and is sent as `Authorization: Bearer fnlk_...`.
 
 Scope calls to one project with the `x-fnlowl-project` header. `list_projects`
 returns the ids.
