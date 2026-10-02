@@ -14,3 +14,5 @@ jobs:
         with:
           node-version: 20
       - run: node scripts/check-skills.mjs
+      - run: npm install -g @anthropic-ai/claude-code
+      - run: claude plugin validate ./
