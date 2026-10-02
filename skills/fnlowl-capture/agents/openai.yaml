@@ -1,0 +1,4 @@
+interface:
+  display_name: "fnlowl Capture"
+  short_description: "Operate fnlowl lead-capture widgets, leads and follow-up mail"
+  default_prompt: "Use $fnlowl-capture to see how a lead-capture widget is converting and to author or fix one. It reads widgets, leads and funnel numbers, and drafts campaigns and sequences — it cannot send mail, and nothing it does reaches a real inbox."
