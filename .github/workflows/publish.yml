@@ -1,0 +1,25 @@
+name: publish
+
+# Publishes to npm when a GitHub release is published. Uses npm trusted publishing
+# (OIDC), so there is no stored token and no one-time password.
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+      - name: Release tag must match package.json
+        run: test "v$(node -p "require('./package.json').version")" = "$GITHUB_REF_NAME"
+      - run: node scripts/check-skills.mjs
+      - run: npm publish --provenance --access public
