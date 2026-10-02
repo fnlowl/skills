@@ -7,4 +7,7 @@ if ! command -v npx >/dev/null 2>&1; then
   exit 1
 fi
 
-npx skills add --all --global --yes https://github.com/fnlowl/skills
+# One agent only (default Claude Code). Without --agent a non-interactive run
+# installs into every supported agent, which writes into dozens of folders.
+# Usage: ./install.sh [agent-id]   e.g. ./install.sh codex
+npx skills add https://github.com/fnlowl/skills --global --yes --agent "${1:-claude-code}"
