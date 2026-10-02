@@ -1,6 +1,6 @@
 ---
 name: fnlowl-installation
-description: Install or troubleshoot FnlOwl's website embed on generic sites, WordPress, Shopify, Webflow, or Framer. Use for script-tag setup, WordPress shortcode or block setup, platform connection, and placement troubleshooting. Do not use for authoring widgets or email automation.
+description: Install or troubleshoot FnlOwl's website embed on generic sites, WordPress, Shopify, Webflow, or Framer. Use for script-tag setup, WordPress shortcode or block setup, platform connection, and placement troubleshooting. Do not use for authoring widgets or email automation. Trigger on phrases like "install the fnlowl script", "add the fnlowl widget to WordPress", "fnlowl shortcode", "connect fnlowl to Webflow", or "the widget is not showing on my page".
 metadata:
   api: 4bff472
   openapi_paths: 90
