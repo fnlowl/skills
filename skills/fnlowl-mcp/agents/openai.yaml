@@ -1,0 +1,4 @@
+interface:
+  display_name: "FnlOwl MCP"
+  short_description: "Connect an agent to FnlOwl's MCP server"
+  default_prompt: "Use $fnlowl-mcp to configure FnlOwl MCP access and verify the available tool surface."
