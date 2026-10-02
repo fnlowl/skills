@@ -2,10 +2,7 @@
   "mcpServers": {
     "fnlowl": {
       "type": "http",
-      "url": "${FNLOWL_MCP_URL:-https://api.fnlowl.com/v1/mcp}",
-      "headers": {
-        "Authorization": "Bearer ${FNLOWL_API_KEY}"
-      }
+      "url": "https://api.fnlowl.com/v1/mcp"
     }
   }
 }
