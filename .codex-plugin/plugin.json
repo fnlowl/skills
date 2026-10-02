@@ -1,0 +1,35 @@
+{
+  "name": "fnlowl",
+  "version": "0.1.0",
+  "description": "Build and operate FnlOwl lead-capture widgets, follow-up automation, and email delivery safely.",
+  "author": {
+    "name": "FnlOwl",
+    "url": "https://fnlowl.com"
+  },
+  "homepage": "https://fnlowl.com",
+  "repository": "https://github.com/fnlowl/skills",
+  "license": "MIT",
+  "keywords": [
+    "lead-capture",
+    "email",
+    "marketing-automation",
+    "widgets",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "FnlOwl",
+    "shortDescription": "Lead capture and responsible email automation.",
+    "longDescription": "Use FnlOwl skills to build capture widgets, diagnose funnels, draft follow-up, and review email-sending readiness.",
+    "developerName": "FnlOwl",
+    "category": "Productivity",
+    "websiteURL": "https://fnlowl.com",
+    "brandColor": "#147A34",
+    "logo": "./assets/logo.svg",
+    "defaultPrompt": [
+      "Use $fnlowl-capture to diagnose this widget's conversion funnel.",
+      "Use $fnlowl-follow-up-automation to draft a lead follow-up sequence.",
+      "Use $fnlowl-installation to add a FnlOwl widget to my website."
+    ]
+  }
+}
