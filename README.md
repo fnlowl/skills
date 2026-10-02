@@ -27,6 +27,15 @@ npx skills add fnlowl/skills --global --agent claude-code --skill fnlowl-mcp
 Name your agent with `--agent` (for example `claude-code`, `codex` or `cursor`). Without it, a
 non-interactive run (`--yes`) installs into every agent the installer supports.
 
+### Install from npm
+
+```bash
+npm i -D fnlowl-skills
+npx skills experimental_sync --agent claude-code
+```
+
+The package is [`fnlowl-skills`](https://www.npmjs.com/package/fnlowl-skills). The sync links the four skills from `node_modules` into your project's agent folder; name your agent with `--agent`.
+
 ### Pin a release
 
 Releases are tagged on GitHub. For a stable install, pin a tag instead of the default branch:
