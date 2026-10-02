@@ -1,6 +1,6 @@
 ---
 name: fnlowl-follow-up-automation
-description: Draft or review FnlOwl lead-magnet delivery, ESP and webhook handoff, campaigns, and follow-up sequences. Use when asked to create a nurture sequence, draft a campaign, diagnose a delivery or enrolment problem, or plan quiz-based follow-up. Do not use to create on-page widgets or analyse conversion.
+description: Draft or review FnlOwl lead-magnet delivery, ESP and webhook handoff, campaigns, and follow-up sequences. Use when asked to create a nurture sequence, draft a campaign, diagnose a delivery or enrolment problem, or plan quiz-based follow-up. Do not use to create on-page widgets or analyse conversion. Trigger on phrases like "draft a nurture sequence", "write a follow-up email for this quiz", "why did this lead not get the magnet email", or "set up the webhook handoff".
 metadata:
   api: 4bff472
   openapi_paths: 90
