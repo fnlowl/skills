@@ -32,7 +32,7 @@ const pkg = readJson('package.json')
 const codexPlugin = readJson('.codex-plugin/plugin.json')
 const cursorPlugin = readJson('.cursor-plugin/plugin.json')
 
-for (const path of ['assets/logo.svg', 'install.sh', '.agents/plugins/marketplace.json']) {
+for (const path of ['assets/logo.svg', 'install.sh', '.agents/plugins/marketplace.json', '.claude-plugin/marketplace.json']) {
   if (!existsSync(join(ROOT, path))) fail(`missing distribution artifact: ${path}`)
 }
 
