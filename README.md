@@ -17,12 +17,15 @@ Read them in [skills/](skills/).
 
 ```bash
 npx skills add fnlowl/skills --list
-npx skills add fnlowl/skills --global
-npx skills add fnlowl/skills --global --skill fnlowl-capture
-npx skills add fnlowl/skills --global --skill fnlowl-follow-up-automation
-npx skills add fnlowl/skills --global --skill fnlowl-installation
-npx skills add fnlowl/skills --global --skill fnlowl-mcp
+npx skills add fnlowl/skills --global --agent claude-code
+npx skills add fnlowl/skills --global --agent claude-code --skill fnlowl-capture
+npx skills add fnlowl/skills --global --agent claude-code --skill fnlowl-follow-up-automation
+npx skills add fnlowl/skills --global --agent claude-code --skill fnlowl-installation
+npx skills add fnlowl/skills --global --agent claude-code --skill fnlowl-mcp
 ```
+
+Name your agent with `--agent` (for example `claude-code`, `codex` or `cursor`). Without it, a
+non-interactive run (`--yes`) installs into every agent the installer supports.
 
 ## Use it
 
