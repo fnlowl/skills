@@ -89,9 +89,9 @@ for (const entry of index.skills) {
   }
   // The metadata receipt that lets a reader tell a stale skill from a current
   // one. A skill without it cannot be checked against the API at all.
-  for (const key of ['api', 'openapi_paths', 'mcp_tools']) {
-    if (!new RegExp(`^\\s+${key}:\\s*\\S`, 'm').test(skill)) {
-      fail(`${entry.name}: SKILL.md authored-against has no "${key}"`)
+  for (const field of ['api', 'openapi_paths', 'mcp_tools']) {
+    if (!new RegExp(`^\\s+${field}:\\s*\\S`, 'm').test(skill)) {
+      fail(`${entry.name}: SKILL.md authored-against has no "${field}"`)
     }
   }
 
