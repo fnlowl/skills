@@ -1,0 +1,23 @@
+{
+  "name": "fnlowl-plugins",
+  "owner": {
+    "name": "FnlOwl"
+  },
+  "interface": {
+    "displayName": "FnlOwl"
+  },
+  "plugins": [
+    {
+      "name": "fnlowl",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/fnlowl/skills.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
