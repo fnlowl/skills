@@ -1,0 +1,15 @@
+{
+  "name": "fnlowl-plugins",
+  "owner": {
+    "name": "fnlowl",
+    "email": "mcpsupport@fnlowl.com"
+  },
+  "description": "Operate fnlowl lead-capture widgets, leads and follow-up email from your AI agent.",
+  "plugins": [
+    {
+      "name": "fnlowl",
+      "source": "./",
+      "category": "Productivity"
+    }
+  ]
+}
