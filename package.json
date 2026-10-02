@@ -1,0 +1,14 @@
+{
+  "name": "@fnlowl/skills",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "homepage": "https://fnlowl.com",
+  "repository": "github:fnlowl/skills",
+  "keywords": ["agent-skills", "mcp", "lead-capture", "fnlowl"],
+  "type": "module",
+  "description": "Agent skills for operating fnlowl — lead-capture widgets, the leads they produce, and the mail that follows.",
+  "scripts": {
+    "check": "node scripts/check-skills.mjs"
+  }
+}
