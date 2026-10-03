@@ -17,7 +17,8 @@ The remote MCP endpoint is `https://api.fnlowl.com/v1/mcp`. Authenticate with
 Claude.ai and ChatGPT can connect without a key: add the URL as a custom
 connector (OAuth, no client id or secret), sign in, and approve the consent
 screen. The grant carries `read`, `write` and `publish` scopes and may be
-limited to one website; a project-bound grant ignores `x-fnlowl-project`, and
+limited to one website; a project-bound grant ignores `x-fnlowl-project` and refuses
+the per-call `project` argument, and
 brand writes then set that website's override. `update_ai_context` is refused
 for such a grant. In ChatGPT, set the app permission to "Allow read-only tools"
 or write tools stay hidden.
@@ -25,8 +26,10 @@ or write tools stay hidden.
 ## Connection rules
 
 1. Call `tools/list` first. The live response is authoritative.
-2. Call `list_projects`, choose a project, then send `x-fnlowl-project` on
-   every later request. Without it, tools operate across the account.
+2. Call `list_projects`, choose a project, then pass its id as the `project`
+   argument on each call, or set the `x-fnlowl-project` header once for the
+   connection. A per-call `project` lets one conversation work across all of
+   an account's sites. With neither, tools operate across the account.
 3. The public remote surface has 39 tools without Composio, or 40 when its
    integration service is configured. `tools/list` is the source of truth for
    the current deployment.

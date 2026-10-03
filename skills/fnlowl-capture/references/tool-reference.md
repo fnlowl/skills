@@ -13,7 +13,7 @@ you ([approval-model.md](approval-model.md)).
 
 | | tool | for |
 |---|---|---|
-| R | `list_projects` | the ids the `x-fnlowl-project` header takes. Without one, everything reads account-wide |
+| R | `list_projects` | the ids the `project` argument and the `x-fnlowl-project` header take. With neither, everything reads account-wide |
 | W | `create_project` | adds a site or brand under the account and returns its id. Cannot delete one |
 | R | `read_plan_usage` | the plan and what has been used of each monthly quota: leads, emails, AI messages, plus websites and widgets against their limits. Answers "what is my limit" and "how close am I" |
 | R | `ask_question` | one plain-English question to fnlowl's own Advisor, which knows how the product works and reads the account to answer. Read-only, spends an AI credit, answers in about 120 words. Prefer a direct read tool when you know which one you need |

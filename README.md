@@ -95,8 +95,8 @@ and secret blank).
 For scripts and the CLI you can use an API key from **Settings → API** instead. It starts `fnlk_`,
 is shown once, and is sent as `Authorization: Bearer fnlk_...`.
 
-Scope calls to one project with the `x-fnlowl-project` header. `list_projects`
-returns the ids.
+Scope a call to one project with the `project` argument, or set a default with
+the `x-fnlowl-project` header. `list_projects` returns the ids.
 
 ## What it will not do
 

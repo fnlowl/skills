@@ -60,9 +60,10 @@ For campaigns, sequences, and post-capture delivery, use
 `https://api.fnlowl.com/v1/mcp`, streamable HTTP, `Authorization: Bearer
 fnlk_...`. Create a key in **Settings → API**; it is shown once.
 
-Scope every call to one project with the `x-fnlowl-project` header —
-`list_projects` returns the ids it takes. Without it, tools read across the
-whole account.
+Scope every call to one project with the `project` argument —
+`list_projects` returns the ids it takes — or fix a default for the whole
+connection with the `x-fnlowl-project` header. With neither, tools read across
+the whole account.
 
 The same key authenticates the REST API — `GET /widgets`, `GET /leads`, and 69
 other paths — which is wider than the tool surface and is where anything the

@@ -21,10 +21,14 @@ by a surface that cannot send mail.
    comes back regardless of which project header you sent, so this is safe to
    call first.
 
-   Then pick one and send its id as the `x-fnlowl-project` header on every
-   later call. **With no header, every tool reads across the whole account** —
-   which is not an error and produces no warning, so a widget list spanning
-   three brands looks exactly like one brand's list.
+   Then pick one and pass its id as the `project` argument on each call. That
+   is what lets one conversation work across several sites: name the project
+   on the call, and switch by naming another. A connection can also fix a
+   default with the `x-fnlowl-project` header; a per-call `project` overrides
+   it. A connector approved for one website cannot be switched.
+   **With neither, every tool reads across the whole account** — which is not
+   an error and produces no warning, so a widget list spanning three brands
+   looks exactly like one brand's list.
 
    Quote the project name back to the person before changing anything.
 

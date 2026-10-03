@@ -1,6 +1,6 @@
 {
   "name": "fnlowl-skills",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Agent skills for fnlowl: build lead-capture widgets, quizzes and popups, draft follow-up email sequences, install the embed on WordPress, Shopify and Webflow, and connect to the fnlowl MCP server. Works with Claude Code, Cursor, Codex and other agents.",
   "keywords": [
     "fnlowl",

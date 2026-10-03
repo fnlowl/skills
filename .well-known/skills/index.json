@@ -4,7 +4,7 @@
   "description": "Agent skills for installing and operating FnlOwl lead capture, automation, and MCP access.",
   "homepage": "https://fnlowl.com",
   "repository": "https://github.com/fnlowl/skills",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "skills": [
     {
       "name": "fnlowl-capture",
