@@ -1,5 +1,6 @@
 {
   "name": "fnlowl",
+  "displayName": "fnlowl",
   "description": "Claude Code plugin for operating fnlowl — lead-capture widgets, captured leads, and the campaigns and sequences that follow — through agent skills and the fnlowl MCP server.",
   "version": "0.1.2",
   "author": {
@@ -18,5 +19,7 @@
     "widgets",
     "mcp"
   ],
-  "privacyPolicyUrl": "https://fnlowl.com/policy/privacy/"
+  "privacyPolicyUrl": "https://fnlowl.com/policy/privacy/",
+  "documentationUrl": "https://fnlowl.com/docs/",
+  "termsOfServiceUrl": "https://fnlowl.com/policy/terms/"
 }
